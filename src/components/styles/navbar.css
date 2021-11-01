@@ -32,6 +32,7 @@
     padding-top: calc(2rem + 3px);
     padding-bottom: calc(2rem - 3px);
     text-decoration: none;
+    border-bottom: 3px solid transparent;
 }
 
 .nav-link.active,
@@ -47,6 +48,13 @@
 .link-name {
     font-weight: 100;
     text-transform: uppercase;
+}
+
+.icon-close {
+    position: fixed;
+    top: 1.5rem;
+    left: calc(50vw - 3.5rem);
+    z-index: 100;
 }
 
 @media (max-width: 1050px) {
@@ -71,7 +79,7 @@
     }
 
     .link-name {
-        font-weight: 14px;
+        font-size: 14px;
     }
 }
 
@@ -84,11 +92,40 @@
         margin-left: 0;
     }
 
-    .navbar-nav {
-        display: none;
-    }
-
     .nav-menu {
         display: block;
+    }
+
+    .navbar-nav {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50vw;
+        height: 100vh;
+        padding: 4rem 2rem 2rem;
+        background-color: #222;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        border-bottom: 3px solid transparent;
+    }
+
+    .nav-link.active .link-name,
+    .nav-link:hover .link-name {
+        border-bottom: 3px solid #fff;
+    }
+
+    .link-name {
+        font-size: 1.15rem;
+        font-weight: 700;
     }
 }
