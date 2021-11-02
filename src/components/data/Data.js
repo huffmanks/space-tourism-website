@@ -87,6 +87,7 @@ export const Crew = [
 export const Technology = [
     {
         name: 'Launch vehicle',
+        number: '1',
         images: {
             portrait: launchPortrait,
             landscape: launchLandscape,
@@ -96,6 +97,7 @@ export const Technology = [
     },
     {
         name: 'Spaceport',
+        number: '2',
         images: {
             portrait: spaceportPortrait,
             landscape: spaceportLandscape,
@@ -104,6 +106,7 @@ export const Technology = [
     },
     {
         name: 'Space capsule',
+        number: '3',
         images: {
             portrait: capsulePortrait,
             landscape: capsuleLandscape,

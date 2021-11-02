@@ -2,7 +2,7 @@ import FullPageBgImage from '../layout/FullPageBgImage'
 import Container from '../layout/Container'
 import Header from '../layout/Header'
 
-import Tabs from '../tabs/destination/Tabs'
+import DestinationTabs from '../tabs/destination/DestinationTabs'
 
 import '../styles/tabs.css'
 
@@ -17,7 +17,7 @@ const Destination = ({ children }) => {
                 </Header>
 
                 <main>
-                    <Tabs className='tabs'>{children}</Tabs>
+                    <DestinationTabs className='tabs'>{children}</DestinationTabs>
                 </main>
             </Container>
         </>

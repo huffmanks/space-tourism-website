@@ -38,6 +38,82 @@
     text-transform: uppercase;
 }
 
+.main-crew > * {
+    flex: 1;
+}
+
+.main-crew h1,
+.main-technology h1 {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.main-crew .tab-image {
+    height: 475px;
+}
+
+.main-crew .tab-image img {
+    max-height: 100%;
+}
+
+.member-info h3 {
+    color: #777;
+}
+
+.nav-crew-tab-item {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-crew-tab-item.active {
+    background-color: #fff;
+}
+
+.tech-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+}
+
+.nav-tech-tabs {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-technology {
+    align-items: center;
+}
+
+.main-technology h3 {
+    font-size: 1.25rem;
+}
+
+.nav-tech-tab-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.nav-tech-tab-item.active {
+    background-color: #fff;
+    color: #0b0d1a;
+}
+
 @media (max-width: 1150px) {
     .destination-info h1 {
         font-size: 5rem;
@@ -55,5 +131,48 @@
 @media (max-width: 950px) {
     .nav-tabs {
         justify-content: center;
+    }
+
+    .main-crew {
+        flex-direction: column-reverse;
+    }
+
+    .main-crew h1,
+    .main-technology h1 {
+        font-size: 3rem;
+    }
+
+    .crew-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-technology {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .main-technology h3 {
+        font-size: 1rem;
+    }
+
+    .tech-info {
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+
+    .tech-image {
+        max-width: 100%;
+    }
+
+    .nav-tech-tabs {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .nav-tech-tab-item {
+        width: 75px;
+        height: 75px;
+        font-size: 1.5rem;
     }
 }

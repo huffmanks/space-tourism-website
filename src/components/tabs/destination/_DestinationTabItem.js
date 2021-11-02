@@ -1,4 +1,4 @@
-const TabItem = ({ destination, activeTab }) => {
+const DestinationTabItem = ({ destination, activeTab }) => {
     return (
         <div className={`tab-item ${activeTab === destination.name ? 'show' : ''}`}>
             <div className='destination-info'>
@@ -20,4 +20,4 @@ const TabItem = ({ destination, activeTab }) => {
     )
 }
 
-export default TabItem
+export default DestinationTabItem

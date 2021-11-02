@@ -1,4 +1,4 @@
-const TabImage = ({ destination, activeTab }) => {
+const DestinationTabImage = ({ destination, activeTab }) => {
     return (
         <div className={`tab-image ${activeTab === destination.name ? 'show' : ''}`}>
             <img src={destination.image} alt={destination.name} />
@@ -6,4 +6,4 @@ const TabImage = ({ destination, activeTab }) => {
     )
 }
 
-export default TabImage
+export default DestinationTabImage

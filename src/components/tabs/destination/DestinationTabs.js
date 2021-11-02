@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 import { Destinations } from '../../data/Data'
 
-import TabImage from './_TabImage'
-import TabItem from './_TabItem'
+import DestinationTabImage from './_DestinationTabImage'
+import DestinationTabItem from './_DestinationTabItem'
 
-const Tabs = () => {
+const DestinationTabs = () => {
     const [activeTab, setActiveTab] = useState('Moon')
 
     const handleActiveTab = (e) => {
@@ -16,7 +16,7 @@ const Tabs = () => {
         <>
             <section>
                 {Destinations.map((destination) => (
-                    <TabImage key={destination.name} activeTab={activeTab} destination={destination} />
+                    <DestinationTabImage key={destination.name} activeTab={activeTab} destination={destination} />
                 ))}
             </section>
 
@@ -29,11 +29,11 @@ const Tabs = () => {
                     ))}
                 </ul>
                 {Destinations.map((destination) => (
-                    <TabItem key={destination.name} activeTab={activeTab} destination={destination} />
+                    <DestinationTabItem key={destination.name} activeTab={activeTab} destination={destination} />
                 ))}
             </section>
         </>
     )
 }
 
-export default Tabs
+export default DestinationTabs
